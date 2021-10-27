@@ -26,7 +26,8 @@ foreach ($request_json['events'] as $event)
 
                                 $result_json = json_decode($result, true);   // Decode JSON request
 				
-				$reply_message = $result_json["new_death"];
+				// ตาย 57 คน.
+				$reply_message = "ตาย" . $result_json["new_death"] . "คน.";
 			}
 			
 		} else {
