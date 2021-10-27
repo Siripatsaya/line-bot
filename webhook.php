@@ -17,8 +17,10 @@ foreach ($request_json['events'] as $event)
 			$reply_message = 'ฉันได้รับข้อความ "'. $text.'" ของคุณแล้ว!';
 			
 			if("ขอชื่อผู้พัฒนาระบบ"==$text){
-				$reply_message = "นางสาวศิริภัสญา  ดิษฐเดช";
-			
+				$reply_message = "นางสาวศิริภัสญา  ดิษฐเดช";			
+			}
+			if(("covid-19"==$text) || ("Covid-19"==$text) || ("สถานการณ์โควิด"==$text) || ("สถานการณ์โควิดวันนี้"==$text) ){
+				$reply_message = "ตายเพรียบ!!!";			
 			}
 			
 		} else {
