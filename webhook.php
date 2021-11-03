@@ -33,7 +33,8 @@ foreach ($request_json['events'] as $event)
 				$reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";			
 			}
 			if(("ประวัติความเป็นมาของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"==$text) || ("ประวัติความเป็นมาของKMUTT"==$text) || ("ประวัติKMUTT"==$text)){
-				$reply_message = "https://www.kmutt.ac.th/about-kmutt/history";	
+				$reply_message = "https://www.kmutt.ac.th/about-kmutt/history";
+			}
 			
 		} else {
 			$reply_message = 'ฉันได้รับ "'.$event['message']['type'].'" ของคุณแล้ว!';
