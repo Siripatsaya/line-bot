@@ -29,7 +29,7 @@ foreach ($request_json['events'] as $event)
 				// ตาย 57 คน.
 				$reply_message = "ตาย" . $result_json["new_death"] . "คน.";
 			}
-			if(("เส้นทางไปที่มาหาลัยKMUTT"==$text) || ("บอกเส้นทางไปที่มาหาลัยKMUTT"==$text) || ("ที่อยู่ที่มหาลัยKMUTT"==$text) || ("บอกเส้นทางไปที่มาหาลัยKmutt"==$text) || ("เส้นทางไปที่มหาวิทยาลัยKMUTT"==$text) || ("เส้นทางไปที่มาหาลัยKmutt"==$text) || ("เส้นทางไปที่มหาลัยKMUTT"==$text)){
+			if(("เส้นทางไปที่มาหาลัย KMUTT"==$text) || ("บอกเส้นทางไปที่มาหาลัย KMUTT"==$text) || ("ที่อยู่ที่มหาลัยKMUTT"==$text) || ("บอกเส้นทางไปที่มาหาลัยKmutt"==$text) || ("เส้นทางไปที่มหาวิทยาลัยKMUTT"==$text) || ("เส้นทางไปที่มาหาลัยKmutt"==$text) || ("เส้นทางไปที่มหาลัยKMUTT"==$text)){
 				$reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";			
 			}
 			if(("ประวัติความเป็นมาของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"==$text) || ("ประวัติความเป็นมาของKMUTT"==$text) || ("ประวัติKMUTT"==$text)){
