@@ -29,6 +29,9 @@ foreach ($request_json['events'] as $event)
 				// ตาย 57 คน.
 				$reply_message = "ตาย" . $result_json["new_death"] . "คน.";
 			}
+			if(("เส้นทางไปที่มาหาลัยKMUTT"==$text) || ("บอกเส้นทางไปที่มาหาลัยKMUTT"==$text) || ("ที่อยู่ที่มาหาลัยKMUTT"==$text)){
+				$reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";			
+			}
 			
 		} else {
 			$reply_message = 'ฉันได้รับ "'.$event['message']['type'].'" ของคุณแล้ว!';
